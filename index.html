@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173653">
+<title>Kilpailun hallinta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" id="menuToggle" aria-label="Avaa valikko" aria-expanded="false">☰</button>
+  <a class="brand" href="#"><span class="brand-mark">✈</span>Lennokkikilpailut</a>
+  <div class="topbar-right"><span>Järjestäjä</span><button class="user-button">J</button></div>
+</header>
+<div class="app-shell">
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-heading">KILPAILU</div>
+    <div class="competition-picker">
+      <span class="picker-label">Valittu kilpailu</span><strong>Savikko 2026</strong>
+      <span class="status-dot"><span></span>Päättynyt</span>
+    </div>
+    <nav class="main-nav" aria-label="Kilpailun hallinta">
+      <a class="nav-link active" href="#yleiskatsaus" data-section="yleiskatsaus">▦　Yleiskatsaus</a>
+      <a class="nav-link" href="#perustiedot" data-section="perustiedot">⚙　Perustiedot</a>
+      <a class="nav-link" href="#kilpailijat" data-section="kilpailijat">♙　Kilpailijat</a>
+      <a class="nav-link" href="#tuomarit" data-section="tuomarit">♧　Tuomarit</a>
+      <a class="nav-link" href="#arvostelun-seuranta" data-section="arvostelun-seuranta">☷　Arvostelun seuranta</a>
+      <a class="nav-link" href="#tulokset" data-section="tulokset">🏆　Tulokset</a>
+      <a class="nav-link" href="#asetukset" data-section="asetukset">⚒　Asetukset</a>
+    </nav>
+    <div class="sidebar-bottom"><a class="nav-link" href="#kilpailut">←　Kaikki kilpailut</a><div class="sidebar-version">Käyttöliittymän luonnos 0.1</div></div>
+  </aside>
+  <main class="main-content">
+    <section id="yleiskatsaus">
+      <div class="page-heading">
+        <div><p class="eyebrow">KILPAILUN HALLINTA</p><h1>Savikko 2026</h1><p class="subheading">Kilpailun tilanne ja tärkeimmät toiminnot</p></div>
+        <span class="status-pill">PÄÄTTYNYT</span>
+      </div>
+      <div class="competition-summary">
+        <div><span class="summary-label">Päivämäärä</span><strong>8.8.2026</strong></div>
+        <div><span class="summary-label">Kilpailupaikka</span><strong>Savikko</strong></div>
+        <div><span class="summary-label">Kilpailuluokka</span><strong>Kansanscale</strong></div>
+        <div><span class="summary-label">Arvosteluprofiili</span><strong>KS_V1</strong></div>
+      </div>
+      <div class="section-title-row"><div><h2>Tilannekuva</h2><p class="muted">Yhteenveto kilpailun tiedoista</p></div></div>
+      <div class="stat-grid">
+        <article class="stat-card"><span class="stat-icon">♙</span><strong>5</strong><span>Kilpailijaa</span></article>
+        <article class="stat-card"><span class="stat-icon">♧</span><strong>4</strong><span>Tuomaritehtävää</span></article>
+        <article class="stat-card"><span class="stat-icon">☷</span><strong>3 / 3</strong><span>Lentokierrosta</span></article>
+        <article class="stat-card"><span class="stat-icon">🏆</span><strong>5</strong><span>Laskettua tulosta</span></article>
+      </div>
+      <div class="content-grid">
+        <section class="panel">
+          <h2>Valmistelu ja eteneminen</h2><p class="muted">Kilpailun keskeiset osa-alueet</p>
+          <ul class="progress-list">
+            <li><span class="check">✓</span><div><strong>Perustiedot</strong><small>Kilpailun tiedot ja profiili määritetty</small></div><b>Valmis</b></li>
+            <li><span class="check">✓</span><div><strong>Kilpailijat</strong><small>5 kilpailijaa mukana</small></div><b>Valmis</b></li>
+            <li><span class="check">✓</span><div><strong>Tuomarit</strong><small>Tuomaritehtävät määritetty</small></div><b>Valmis</b></li>
+            <li><span class="check">✓</span><div><strong>Arvostelu</strong><small>Pisteytyksen kierrokset tarkasteltu</small></div><b>Valmis</b></li>
+            <li><span class="check pending">•</span><div><strong>Lopputulokset</strong><small>Tulokset laskettu, hyväksyntä odottaa</small></div><b class="waiting">Kesken</b></li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>Tärkeät toiminnot</h2><p class="muted">Siirry suoraan hallintaan</p>
+          <div class="action-list">
+            <a class="action-link" href="#kilpailijat">♙　<strong>Hallitse kilpailijoita</strong><span>›</span></a>
+            <a class="action-link" href="#tuomarit">♧　<strong>Hallitse tuomareita</strong><span>›</span></a>
+            <a class="action-link" href="#arvostelun-seuranta">☷　<strong>Arvostelun seuranta</strong><span>›</span></a>
+            <a class="action-link" href="#tulokset">🏆　<strong>Avaa tulosten hallinta</strong><span>›</span></a>
+          </div>
+        </section>
+      </div>
+      <section class="panel notice"><strong>Huomio: ensimmäinen käyttöliittymäluonnos</strong><p>Esimerkkitiedot ovat toistaiseksi staattisia. Oikeat kilpailutiedot liitetään myöhemmin Apps Script -rajapintaan.</p></section>
+    </section>
+    <section class="placeholder" id="perustiedot"><h2>Perustiedot</h2><p>Tähän rakennetaan kilpailun perustietojen muokkaus.</p></section>
+    <section class="placeholder" id="kilpailijat"><h2>Kilpailijat</h2><p>Tähän rakennetaan kilpailijoiden hallinta.</p></section>
+    <section class="placeholder" id="tuomarit"><h2>Tuomarit</h2><p>Tähän rakennetaan tuomareiden valinta, tehtävät ja käyttöoikeudet.</p></section>
+    <section class="placeholder" id="arvostelun-seuranta"><h2>Arvostelun seuranta</h2><p>Tähän rakennetaan pisteiden tallennustilanteen seuranta.</p></section>
+    <section class="placeholder" id="tulokset"><h2>Tulokset</h2><p>Tähän rakennetaan tulosten laskenta, julkaisu ja hyväksyntä.</p></section>
+    <section class="placeholder" id="asetukset"><h2>Asetukset</h2><p>Tähän rakennetaan kilpailukohtaiset asetukset.</p></section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body></html>
